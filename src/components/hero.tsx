@@ -23,13 +23,11 @@ import { buttonVariants } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section key="1" className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+    <section key="1" className="w-full py-6 md:py-12 lg:py-16 xl:py-24">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-              Electrokraft LTDA.
-            </h1>
+            <img className="mx-auto" src="kraft.png" width="60%"></img>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
               Em construção.
             </p>

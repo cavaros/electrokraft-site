@@ -35,11 +35,6 @@ export function Header() {
   return (
     <header className="flex h-16 w-full items-center justify-between px-4 md:px-6">
       <Link className="flex items-center" href="#">
-        <Avatar>
-          <AvatarImage src="kraftlogo.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-        <span className="sr-only">Acme Inc</span>
       </Link>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
