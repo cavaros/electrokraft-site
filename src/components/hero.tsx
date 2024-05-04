@@ -50,7 +50,7 @@ export function Hero() {
                 <Link href="mailto:richardson@electrokraft.com.br">
                   <DropdownMenuItem>
                     <MailIcon className="mr-2 h-4 w-4" />
-                    Email
+                    E-mail
                   </DropdownMenuItem>
                 </Link>
                 <Link href="#">
