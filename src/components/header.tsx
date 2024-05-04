@@ -32,6 +32,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function Header() {
   const { setTheme, theme, systemTheme } = useTheme();
+  function alterTheme(theme: string) {
+    localStorage.setItem("theme", theme);
+    setTheme(theme);
+  }
   return (
     <header className="flex h-16 w-full items-center justify-between px-4 md:px-6">
       <Link className="flex items-center" href="#">
@@ -54,15 +58,15 @@ export function Header() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          <DropdownMenuItem onClick={() => setTheme("light")}>
+          <DropdownMenuItem onClick={() => alterTheme("light")}>
             <SunIcon className="mr-2 h-4 w-4" />
             Claro
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme("dark")}>
+          <DropdownMenuItem onClick={() => alterTheme("dark")}>
             <MoonIcon className="mr-2 h-4 w-4" />
             Escuro
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme("system")}>
+          <DropdownMenuItem onClick={() => alterTheme("system")}>
             <MonitorIcon className="mr-2 h-4 w-4" />
             Auto
           </DropdownMenuItem>

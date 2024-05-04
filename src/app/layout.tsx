@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme={typeof window !== 'undefined' ? localStorage.getItem("theme") || "system" : "system"}
           enableSystem
           disableTransitionOnChange
         >
